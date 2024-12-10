@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/UAS-Project-2024/react-gh-pages/static/css/main.cd1b67c2.css",
-    "main.js": "/UAS-Project-2024/react-gh-pages/static/js/main.5fe78525.js",
-    "static/js/841.cf053ce2.chunk.js": "/UAS-Project-2024/react-gh-pages/static/js/841.cf053ce2.chunk.js",
-    "index.html": "/UAS-Project-2024/react-gh-pages/index.html",
-    "main.cd1b67c2.css.map": "/UAS-Project-2024/react-gh-pages/static/css/main.cd1b67c2.css.map",
-    "main.5fe78525.js.map": "/UAS-Project-2024/react-gh-pages/static/js/main.5fe78525.js.map",
-    "841.cf053ce2.chunk.js.map": "/UAS-Project-2024/react-gh-pages/static/js/841.cf053ce2.chunk.js.map"
+    "main.css": "/react-gh-pages/static/css/main.cd1b67c2.css",
+    "main.js": "/react-gh-pages/static/js/main.3e8bff2b.js",
+    "static/js/841.cf053ce2.chunk.js": "/react-gh-pages/static/js/841.cf053ce2.chunk.js",
+    "index.html": "/react-gh-pages/index.html",
+    "main.cd1b67c2.css.map": "/react-gh-pages/static/css/main.cd1b67c2.css.map",
+    "main.3e8bff2b.js.map": "/react-gh-pages/static/js/main.3e8bff2b.js.map",
+    "841.cf053ce2.chunk.js.map": "/react-gh-pages/static/js/841.cf053ce2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd1b67c2.css",
-    "static/js/main.5fe78525.js"
+    "static/js/main.3e8bff2b.js"
   ]
 }

@@ -8,9 +8,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/react-gh-pages/" element={<Home />} />
-        <Route path="/react-gh-pages/about" element={<About />} />
-        <Route path="/react-gh-pages/checkout" element={<Checkout />} />
+        <Route path="/UAS-Project-2024/" element={<Home />} />
+        <Route path="/UAS-Project-2024/about" element={<About />} />
+        <Route path="/UAS-Project-2024/checkout" element={<Checkout />} />
       </Routes>
     </BrowserRouter>
   );

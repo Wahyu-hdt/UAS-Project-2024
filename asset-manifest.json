@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/UAS-Project-2024/react-gh-pages/static/css/main.69326488.css",
-    "main.js": "/UAS-Project-2024/react-gh-pages/static/js/main.c124169b.js",
-    "static/js/841.cf053ce2.chunk.js": "/UAS-Project-2024/react-gh-pages/static/js/841.cf053ce2.chunk.js",
-    "index.html": "/UAS-Project-2024/react-gh-pages/index.html",
-    "main.69326488.css.map": "/UAS-Project-2024/react-gh-pages/static/css/main.69326488.css.map",
-    "main.c124169b.js.map": "/UAS-Project-2024/react-gh-pages/static/js/main.c124169b.js.map",
-    "841.cf053ce2.chunk.js.map": "/UAS-Project-2024/react-gh-pages/static/js/841.cf053ce2.chunk.js.map"
+    "main.css": "/UAS-Project-2024/static/css/main.69326488.css",
+    "main.js": "/UAS-Project-2024/static/js/main.a1489b72.js",
+    "static/js/841.cf053ce2.chunk.js": "/UAS-Project-2024/static/js/841.cf053ce2.chunk.js",
+    "index.html": "/UAS-Project-2024/index.html",
+    "main.69326488.css.map": "/UAS-Project-2024/static/css/main.69326488.css.map",
+    "main.a1489b72.js.map": "/UAS-Project-2024/static/js/main.a1489b72.js.map",
+    "841.cf053ce2.chunk.js.map": "/UAS-Project-2024/static/js/841.cf053ce2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.69326488.css",
-    "static/js/main.c124169b.js"
+    "static/js/main.a1489b72.js"
   ]
 }

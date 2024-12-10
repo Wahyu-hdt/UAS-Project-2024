@@ -1,6 +1,7 @@
 {
   "name": "orbital-gamehouse",
   "version": "0.1.0",
+  "homepage": "https://wahyu-hdt.github.io/UAS-Project-2024/react-gh-pages",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
@@ -9,6 +10,8 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -33,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.2.0",
     "tailwindcss": "^3.4.16"
   }
 }

@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         Kanit: ["Kanit", "sans-serif"],
         Roboto: ["Roboto", "sans-serif"],
+        Poppins: ["Poppins", "sans-serif"],
       },
     },
     plugins: [],

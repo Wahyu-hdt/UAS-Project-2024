@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-svg-background {
+  background-image: url('data:image/svg+xml;utf8,<svg width="300px" height="300px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.7" d="M8 0L15 4V12L8 16L1 12V4L8 0Z" fill="%231f2937"/></svg>');
+  background-size: cover; /* Atur ukuran latar belakang */
+  background-position: center; /* Posisikan latar belakang di tengah */
+}

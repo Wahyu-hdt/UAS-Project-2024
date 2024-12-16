@@ -5,7 +5,7 @@ import Faq from "../Components/Faq";
 const About = () => {
   return (
     <>
-      <div className="h-full  bg-gradient-to-r from-gray-900 to-gray-800 font-Poppins">
+      <div className="h-full  bg-gradient-to-r from-gray-950 to-gray-800 font-Poppins">
         <Navbar />
         <div className=" flex ml-44 mt-12">
           <img src={logo} alt="logo" />

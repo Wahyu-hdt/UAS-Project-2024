@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <nav class=" sticky      top-0 w-full z-50 font-Poppins bg-gradient-to-r from-gray-600 to-stone-800 shadow-lg">
+      <nav class=" sticky top-0 w-full z-50 font-Poppins bg-gradient-to-r from-gray-800 to-stone-800 shadow-lg">
         {/* Layout Navbar*/}
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between ml-11 p-1">
           <img src={logo} class="h-11 w-38" alt="Logo" />

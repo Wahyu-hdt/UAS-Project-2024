@@ -6,7 +6,7 @@ const Faq = () => {
 
   const faqs = [
     {
-      question: "Apa saja fasilitas disediakan?",
+      question: "Apa saja fasilitas yang disediakan?",
       answer:
         "Konsol yang lengkap, Wi-Fi kencang, TV, AC, Kamar mandi, Kursi yang tebal dan nyaman dan masih banyak lagi.",
     },
@@ -27,7 +27,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="max-w-xl  mt-14 mr-10  text-white text-lg">
+    <div className="max-w-xl  mt-14 mr-10  text-white text-lg ">
       {faqs.map((faq, index) => (
         /*Mapping through the array of faqs*/
         <div key={index} className="border-b">
@@ -35,15 +35,23 @@ const Faq = () => {
             className="flex justify-between items-center w-full p-4 text-left focus:outline-none"
             onClick={() => togglefaqs(index)} // When the button is clicked, it will call the togglefaqs function with the index of faqs
           >
-            <span className="font-semibold">{faq.question}</span>
+            <span className="font-semibold ">{faq.question}</span>
             <span className="ml-3">{openIndex === index ? "v" : ">"}</span>{" "}
             {/*if openIndex is equal to the index, then the span will be "v" else it will be ">"*/}
           </button>
-          {openIndex === index && (
-            <div className="p-4 text-white">
-              {faq.answer}
-            </div> /* Show the answer of Faqs based on the index*/
-          )}
+
+          <div
+            className={`
+              overflow-hidden transition-all duration-200 ease-in-out
+              ${
+                openIndex === index
+                  ? "max-h-screen opacity-100 p-4"
+                  : "max-h-0 opacity-0 "
+              }
+            `} // transition for opening and closing the accordion
+          >
+            <div className="text-white">{faq.answer}</div>
+          </div>
         </div>
       ))}
     </div>

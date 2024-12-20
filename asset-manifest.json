@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/UAS-Project-2024/static/css/main.0bccd658.css",
-    "main.js": "/UAS-Project-2024/static/js/main.63efb026.js",
+    "main.css": "/UAS-Project-2024/static/css/main.e0dd4533.css",
+    "main.js": "/UAS-Project-2024/static/js/main.482c01d8.js",
     "static/js/841.cf053ce2.chunk.js": "/UAS-Project-2024/static/js/841.cf053ce2.chunk.js",
     "static/media/OGHlogo 2.png": "/UAS-Project-2024/static/media/OGHlogo 2.9d6b509603370f089aef.png",
     "index.html": "/UAS-Project-2024/index.html",
-    "main.0bccd658.css.map": "/UAS-Project-2024/static/css/main.0bccd658.css.map",
-    "main.63efb026.js.map": "/UAS-Project-2024/static/js/main.63efb026.js.map",
+    "main.e0dd4533.css.map": "/UAS-Project-2024/static/css/main.e0dd4533.css.map",
+    "main.482c01d8.js.map": "/UAS-Project-2024/static/js/main.482c01d8.js.map",
     "841.cf053ce2.chunk.js.map": "/UAS-Project-2024/static/js/841.cf053ce2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bccd658.css",
-    "static/js/main.63efb026.js"
+    "static/css/main.e0dd4533.css",
+    "static/js/main.482c01d8.js"
   ]
 }

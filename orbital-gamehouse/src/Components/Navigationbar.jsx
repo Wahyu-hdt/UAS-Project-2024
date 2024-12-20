@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <nav class=" sticky top-0 w-full z-50 font-Poppins bg-gradient-to-r from-gray-800 to-stone-800 shadow-lg">
+      <nav class=" sticky top-0 w-full z-50 font-Poppins rounded-md bg-gray-600 backdrop-filter backdrop-blur-md bg-opacity-30  border-b border-gray-500 ">
         {/* Layout Navbar*/}
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between ml-11 p-1">
+        <div class="max-w-screen flex flex-wrap items-center justify-between ml-11 mb-1 p-1">
           <img src={logo} class="h-11 w-38" alt="Logo" />
 
           {/* Link to Home and About page */}
-          <div class="flex items-center text-white ">
+          <div class="flex items-center text-white  ">
             <Link
               to="/UAS-Project-2024/"
               className="hover:text-gray-300 hover:underline transition duration-200 ease-in-out "
@@ -27,7 +27,7 @@ const Navbar = () => {
           </div>
 
           {/* Link to Cart Using SVG */}
-          <div className="flex">
+          <div className="flex mr-44">
             <Link
               to="/UAS-Project-2024/checkout"
               className="hover:bg-gray-300 rounded-sm transition duration-300 ease-in-out hover:underline"

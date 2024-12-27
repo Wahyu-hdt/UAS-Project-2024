@@ -30,7 +30,7 @@ const Navbar = () => {
           <div className="flex mr-44">
             <Link
               to="/UAS-Project-2024/checkout"
-              className="hover:bg-gray-300 rounded-sm transition duration-300 ease-in-out hover:underline"
+              className="hover:bg-gray-400 rounded-sm transition duration-300 ease-in-out hover:underline"
             >
               <svg
                 width="40px"

@@ -2,8 +2,9 @@ import React, { useState } from "react";
 
 /* variabel to store array of question and answer */
 const Faq = () => {
-  const [openIndex, setOpenIndex] = useState(null); // Initialize state for openIndex
+  const [openIndex, setOpenIndex] = useState(null);
 
+  // Storing the question and answer
   const faqs = [
     {
       question: "Apa saja fasilitas yang disediakan?",
@@ -28,8 +29,8 @@ const Faq = () => {
 
   return (
     <div className="max-w-xl  mt-14 mr-10  text-white text-lg ">
+      {/* Mapping through the array of faqs */}
       {faqs.map((faq, index) => (
-        /*Mapping through the array of faqs*/
         <div key={index} className="border-b">
           <button
             className="flex justify-between items-center w-full p-4 text-left focus:outline-none"
@@ -37,20 +38,20 @@ const Faq = () => {
           >
             <span className="font-semibold ">{faq.question}</span>
             <span className="ml-3">{openIndex === index ? "v" : ">"}</span>{" "}
-            {/*if openIndex is equal to the index, then the span will be "v" else it will be ">"*/}
           </button>
 
+          {/* Transition for opening and closing the accordion */}
           <div
             className={`
-              overflow-hidden transition-all duration-200 ease-in-out
+              overflow-hidden transition-all duration-200 
               ${
                 openIndex === index
-                  ? "max-h-screen opacity-100 p-4"
+                  ? "max-h-auto opacity-100 p-4"
                   : "max-h-0 opacity-0 "
               }
-            `} // transition for opening and closing the accordion
+            `}
           >
-            <div className="text-white">{faq.answer}</div>
+            <p className="text-white">{faq.answer}</p>
           </div>
         </div>
       ))}

@@ -5,7 +5,7 @@ const Notfound = () => {
     <div className="h-screen bg-gray-900">
       <Navbar />
       {/* If page not found then show frown SVG and 404 message */}
-      <div className="w-screen h-96 font-Kanit flex flex-col items-center justify-center  opacity-20">
+      <div className="w-screen h-96 font-Kanit flex flex-col items-center justify-center opacity-20">
         <svg
           className=" mb-3 "
           width="70px"

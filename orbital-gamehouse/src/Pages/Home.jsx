@@ -1,4 +1,5 @@
 import Navbar from "../Components/Navigationbar";
+import Imagecarousel from "../Components/Imagecarousel";
 
 const Home = () => {
   /* Save SVG in a variable */
@@ -9,8 +10,9 @@ const Home = () => {
   `;
 
   return (
+    /* SVG for Background */
     <div
-      className="h-screen bg-gray-950"
+      className="h-full w-full bg-gray-950 flex flex-col"
       style={{
         backgroundImage: `url("data:image/svg+xml;utf8,${encodeURIComponent(
           svgBackground
@@ -19,11 +21,19 @@ const Home = () => {
       }}
     >
       <Navbar />
-      <div className="w-screen h-96 flex mt-28 justify-center">
-        <h1 className="w-1/2 h-auto justify-center bg-gray-600 rounded-lg text-white p-4">
-          Ini Tempat Promo/Berita (image carousel)
+      {/* Container Image Carousel */}
+      <div className="flex flex-col items-center justify-center flex-grow">
+        <h1 className="font-Poppins text-white text-4xl mt-10 font-bold">
+          NEWS
         </h1>
+        <div className="flex w-[1250px] h-[650px] mt-5 mb-8 justify-center bg-gray-600 rounded-lg">
+          <Imagecarousel />
+        </div>
       </div>
+
+      <h2 className="h-screen bg-gradient-to-r from-gray-950 to-gray-700 text-white">
+        aduiokahdiuahdiuahdbybila a
+      </h2>
     </div>
   );
 };

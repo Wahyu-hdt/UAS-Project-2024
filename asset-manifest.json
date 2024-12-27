@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/UAS-Project-2024/static/css/main.e0dd4533.css",
-    "main.js": "/UAS-Project-2024/static/js/main.482c01d8.js",
+    "main.css": "/UAS-Project-2024/static/css/main.855c21ad.css",
+    "main.js": "/UAS-Project-2024/static/js/main.26b89e35.js",
+    "static/js/952.9cea05b0.chunk.js": "/UAS-Project-2024/static/js/952.9cea05b0.chunk.js",
     "static/js/841.cf053ce2.chunk.js": "/UAS-Project-2024/static/js/841.cf053ce2.chunk.js",
     "static/media/OGHlogo 2.png": "/UAS-Project-2024/static/media/OGHlogo 2.9d6b509603370f089aef.png",
     "index.html": "/UAS-Project-2024/index.html",
-    "main.e0dd4533.css.map": "/UAS-Project-2024/static/css/main.e0dd4533.css.map",
-    "main.482c01d8.js.map": "/UAS-Project-2024/static/js/main.482c01d8.js.map",
+    "main.855c21ad.css.map": "/UAS-Project-2024/static/css/main.855c21ad.css.map",
+    "main.26b89e35.js.map": "/UAS-Project-2024/static/js/main.26b89e35.js.map",
+    "952.9cea05b0.chunk.js.map": "/UAS-Project-2024/static/js/952.9cea05b0.chunk.js.map",
     "841.cf053ce2.chunk.js.map": "/UAS-Project-2024/static/js/841.cf053ce2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0dd4533.css",
-    "static/js/main.482c01d8.js"
+    "static/css/main.855c21ad.css",
+    "static/js/main.26b89e35.js"
   ]
 }

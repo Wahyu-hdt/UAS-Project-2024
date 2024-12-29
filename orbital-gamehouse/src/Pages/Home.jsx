@@ -1,5 +1,6 @@
 import Navbar from "../Components/Navigationbar";
 import Imagecarousel from "../Components/Imagecarousel";
+import ProductList from "../Components/ProductList";
 
 const Home = () => {
   /* Save SVG in a variable */
@@ -8,7 +9,6 @@ const Home = () => {
       <path opacity="0.7" d="M8 0L15 4V12L8 16L1 12V4L8 0Z" fill="#1f2937" />
     </svg>
   `;
-
   return (
     /* SVG for Background */
     <div
@@ -26,14 +26,14 @@ const Home = () => {
         <h1 className="font-Poppins text-white text-4xl mt-10 font-bold">
           NEWS
         </h1>
-        <div className="flex w-[1250px] h-[650px] mt-5 mb-8 justify-center bg-gray-600 rounded-lg">
+        <div className="flex w-[1250px] h-[650px] mt-5 mb-20 justify-center bg-gray-600 rounded-lg">
           <Imagecarousel />
         </div>
       </div>
-
-      <h2 className="h-screen bg-gradient-to-r from-gray-950 to-gray-700 text-white">
-        aduiokahdiuahdiuahdbybila a
-      </h2>
+      {/* Product List Part */}
+      <div className="h-auto bg-gradient-to-b from-gray-950 to-gray-700">
+        <ProductList />
+      </div>
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
 
-// Create the CartContext
 const CartContext = createContext();
 
 // Create a provider for the cart context
@@ -10,15 +9,15 @@ export const CartProvider = ({ children }) => {
   // Function to add a product to the cart
   const addToCart = (product) => {
     // Update the cart state by adding the new product
-    setCart((itemsCart) => [...itemsCart, product]);
+    setCart((Cart) => [...Cart, product]);
   };
 
-  // Function to update the cart
+  //   Function to Update the cart
   const updateCart = (newCart) => {
     setCart(newCart);
   };
 
-  // Provide the context value (state and functions) to child components
+  // Provide the context value (state and function) to child components
   return (
     <CartContext.Provider value={{ cart, addToCart, updateCart }}>
       {children}

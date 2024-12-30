@@ -1,8 +1,13 @@
 import React from "react";
 import logo from "../Images/OGHlogo 2.png";
 import { Link } from "react-router-dom";
+import { useCart } from "../CartContext";
 
 const Navbar = () => {
+  // Import cart from context
+  const { cart } = useCart();
+
+  const newCart = [...cart];
   return (
     <>
       <nav class=" sticky top-0 w-full z-50 font-Poppins rounded-md bg-gray-600 backdrop-filter backdrop-blur-md bg-opacity-30  border-b border-gray-500 ">
@@ -59,7 +64,7 @@ const Navbar = () => {
             </Link>
             {/* Quantity in cart */}
             <span className="flex ml-1 bg-yellow-400 w-5 h-5 rounded-3xl  items-center justify-center">
-              0
+              {newCart.length}
             </span>
           </div>
         </div>

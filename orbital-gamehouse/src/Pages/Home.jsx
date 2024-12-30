@@ -32,6 +32,9 @@ const Home = () => {
       </div>
       {/* Product List Part */}
       <div className="h-auto bg-gradient-to-b from-gray-950 to-gray-700">
+        <h1 className="text-white font-bold text-5xl mt-10 flex justify-center ">
+          Product List
+        </h1>
         <ProductList />
       </div>
     </div>

@@ -1,10 +1,10 @@
 import BackToHome from "../Components/BackToHome";
 import { useCart } from "../CartContext";
+import { FaTrashCan } from "react-icons/fa6";
 
 const Checkout = () => {
   // Import cart from context
   const { cart, updateCart } = useCart();
-  console.log(cart, updateCart);
 
   // Increase Quantity Function
   const increaseQuantity = (index) => {
@@ -20,6 +20,12 @@ const Checkout = () => {
       newCart[index].quantity -= 1;
       updateCart(newCart);
     }
+  };
+
+  // Remove item from cart
+  const removeItem = (index) => {
+    const newCart = cart.filter((_, i) => i !== index);
+    updateCart(newCart);
   };
 
   return (
@@ -43,21 +49,34 @@ const Checkout = () => {
                 className="bg-gray-800 p-4 rounded-lg shadow-md flex justify-between"
               >
                 <span className="text-lg">{product.name}</span>
-                <div className="flex justify-end">
-                  <div className="mr-40">
-                    <button onClick={() => decreaseQuantity(index)}>-</button>
-                    <span className="mx-2">{product.quantity}</span>
-                    <button onClick={() => increaseQuantity(index)}>+</button>
+                <div className="flex justify-between">
+                  <div className="mr-32">
+                    <button
+                      onClick={() => decreaseQuantity(index)}
+                      className="px-2 py-1 bg-gray-600 rounded"
+                    >
+                      -
+                    </button>
+                    <span className="mx-4 min-w-[100px]">
+                      {product.quantity}
+                    </span>
+                    <button
+                      onClick={() => increaseQuantity(index)}
+                      className="px-2 py-1 bg-gray-600 rounded"
+                    >
+                      +
+                    </button>
                   </div>
-                  <span className="text-lg font-semibold">
-                    RP.{" "}
-                    {typeof product.price === "number"
-                      ? product.price *
-                        (typeof product.quantity === "number"
-                          ? product.quantity
-                          : 0)
+                  <span className="text-lg font-semibold min-w-[100px]">
+                    RP.
+                    {product.price * product.quantity > 0
+                      ? product.price * product.quantity
                       : 0}
                   </span>
+                  <FaTrashCan
+                    onClick={() => removeItem(index)}
+                    className="w-7 h-7 text-red-500 hover:cursor-pointer hover:text-red-700 "
+                  />
                 </div>
               </li>
             ))}

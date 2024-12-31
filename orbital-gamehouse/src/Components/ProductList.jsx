@@ -3,9 +3,12 @@ import { useEffect, useState } from "react";
 import { useCart } from "../CartContext";
 
 const ProductList = () => {
+  // Initialize state to store products
   const [products, setProducts] = useState([]);
+
   // Import addToCart from context
   const { addToCart } = useCart();
+
   // Initialize added Products to an empty array
   const [addedProducts, setAddedProducts] = useState(new Set());
 
@@ -14,6 +17,7 @@ const ProductList = () => {
     const fetchProducts = async () => {
       const { data, error } = await supabase.from("paket-rental").select("*");
 
+      // Error handling
       if (error) {
         console.log(
           "Terjadi Error Saat Fetching Data Dari Tabel paket-rental",

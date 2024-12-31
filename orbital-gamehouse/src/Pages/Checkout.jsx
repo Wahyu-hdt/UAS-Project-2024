@@ -68,7 +68,7 @@ const Checkout = () => {
 
       // Inserting dataOrder to supabase
       const { data, error } = await supabase
-        .from("Orders")
+        .from("place_order")
         .insert(dataOrder)
         .select();
 
@@ -80,13 +80,18 @@ const Checkout = () => {
       updateCart([]);
       navigate("/UAS-Project-2024/confirm", {
         state: {
-          orderItems: data,
+          // temporary store order data and subtotal before passing it to confirm page
+          ordersFromCheckout: data,
           subtotal: calculateSubtotal(),
         },
       });
+
+      // error handling
     } catch (error) {
       console.error("Error submitting order:", error);
       alert("Gagal membuat pesanan. Silakan coba lagi.");
+
+      // reset submitting state
     } finally {
       setIsSubmitting(false);
     }

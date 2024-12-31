@@ -67,7 +67,7 @@ const Checkout = () => {
       }));
 
       // Inserting dataOrder to supabase
-      const { data, error } = await supabase
+      const { error } = await supabase
         .from("place_order")
         .insert(dataOrder)
         .select();
@@ -78,13 +78,7 @@ const Checkout = () => {
 
       // Clear cart dan navigate to confirm page
       updateCart([]);
-      navigate("/UAS-Project-2024/confirm", {
-        state: {
-          // temporary store order data and subtotal before passing it to confirm page
-          ordersFromCheckout: data,
-          subtotal: calculateSubtotal(),
-        },
-      });
+      navigate("/UAS-Project-2024/confirm", {});
 
       // error handling
     } catch (error) {
@@ -111,6 +105,7 @@ const Checkout = () => {
             Keranjangmu Kosong nih, silakan pilih paket dulu
           </h1>
         ) : (
+          // Displaying the list of products in the cart
           <ul className="space-y-4">
             {cart.map((product, index) => (
               <li

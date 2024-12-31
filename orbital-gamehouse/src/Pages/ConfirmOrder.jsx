@@ -23,8 +23,8 @@ const ConfirmOrder = () => {
         setConfirmOrder(data);
       }
     };
-    fetchConfirmOrder();
-  }, []);
+    fetchConfirmOrder(); // Call the function to fetch data from place_order tabel
+  }, []); // Empty dependency array to run only once
 
   return (
     <div className="bg-gray-900 text-white min-h-screen p-6 font-Poppins ">
@@ -58,9 +58,11 @@ const ConfirmOrder = () => {
               </li>
             ))
           ) : (
-            <div>
+            <div className="flex flex-col justify-center items-center mt-14">
+              <p className="text-center  mb-8 ">
+                Tidak ada order, kembali ke home.
+              </p>
               <BackToHome />
-              <p className="text-center">Tidak ada order, kembali ke home.</p>
             </div>
           )}
         </ul>

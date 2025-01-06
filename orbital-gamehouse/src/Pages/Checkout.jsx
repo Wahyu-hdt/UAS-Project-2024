@@ -63,6 +63,7 @@ const Checkout = () => {
         }),
         product_name: product.name,
         quantity: product.quantity,
+        price_per_product: product.price,
         total: product.price * product.quantity,
       }));
 

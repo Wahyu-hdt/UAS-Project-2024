@@ -15,6 +15,7 @@ const ImageCarousel = () => {
         "gamexbox.jpg",
         "eafc25.jpg",
       ];
+
       const url = [];
 
       for (const image of images) {

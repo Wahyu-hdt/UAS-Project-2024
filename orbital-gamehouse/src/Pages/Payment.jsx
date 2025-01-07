@@ -60,7 +60,7 @@ const Payment = () => {
         autoClose: 3000,
       });
 
-      // Navigate after a short delay to allow the toast to be seen
+      // Navigate to home page after payment success
       setTimeout(() => {
         navigate("/UAS-Project-2024/");
       }, 3000);

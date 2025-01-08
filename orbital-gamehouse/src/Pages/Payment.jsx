@@ -9,6 +9,9 @@ const Payment = () => {
   // Initialize Navigate
   const navigate = useNavigate();
 
+  // State to hold total amount
+  const [totalAmount, setTotalAmount] = useState(0);
+
   // Initialize payment state
   const [payment, setPayment] = useState([]);
 
@@ -23,6 +26,8 @@ const Payment = () => {
       } else {
         // Set fetched data to payment state
         setPayment(data);
+        const total = data.reduce((acc, order) => acc + (order.total || 0), 0);
+        setTotalAmount(total);
       }
     };
     fetchPayment(); // Call the function to fetch data from place_order tabel
@@ -94,7 +99,7 @@ const Payment = () => {
               Order ID: <span className="font-bold">{payment[0].order_id}</span>
             </p>
             <p className="font-bold text-green-500 text-2xl">
-              Total: Rp {payment[0].total}
+              Total: Rp {totalAmount}
             </p>
           </>
         ) : (

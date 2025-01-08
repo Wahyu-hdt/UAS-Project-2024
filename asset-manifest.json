@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/UAS-Project-2024/static/css/main.208484cc.css",
-    "main.js": "/UAS-Project-2024/static/js/main.6aff0cce.js",
+    "main.css": "/UAS-Project-2024/static/css/main.a87012d3.css",
+    "main.js": "/UAS-Project-2024/static/js/main.8cc61d97.js",
     "static/js/952.9cea05b0.chunk.js": "/UAS-Project-2024/static/js/952.9cea05b0.chunk.js",
     "static/js/841.cf053ce2.chunk.js": "/UAS-Project-2024/static/js/841.cf053ce2.chunk.js",
     "static/media/OGHlogo 2.png": "/UAS-Project-2024/static/media/OGHlogo 2.9d6b509603370f089aef.png",
     "static/media/qris.jpg": "/UAS-Project-2024/static/media/qris.84015e4de3e691a9905e.jpg",
     "static/media/cash logo.jpg": "/UAS-Project-2024/static/media/cash logo.74ae418cfdda20fbd844.jpg",
     "index.html": "/UAS-Project-2024/index.html",
-    "main.208484cc.css.map": "/UAS-Project-2024/static/css/main.208484cc.css.map",
-    "main.6aff0cce.js.map": "/UAS-Project-2024/static/js/main.6aff0cce.js.map",
+    "main.a87012d3.css.map": "/UAS-Project-2024/static/css/main.a87012d3.css.map",
+    "main.8cc61d97.js.map": "/UAS-Project-2024/static/js/main.8cc61d97.js.map",
     "952.9cea05b0.chunk.js.map": "/UAS-Project-2024/static/js/952.9cea05b0.chunk.js.map",
     "841.cf053ce2.chunk.js.map": "/UAS-Project-2024/static/js/841.cf053ce2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.208484cc.css",
-    "static/js/main.6aff0cce.js"
+    "static/css/main.a87012d3.css",
+    "static/js/main.8cc61d97.js"
   ]
 }

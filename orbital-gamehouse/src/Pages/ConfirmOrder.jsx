@@ -94,7 +94,7 @@ const ConfirmOrder = () => {
       {/* Main container with responsive padding */}
       <div className="max-w-5xl mx-auto">
         {/* Title */}
-        <h1 className="text-3xl sm:text-4xl font-bold mb-6 mt-5 flex justify-center bg-clip-text text-transparent bg-white">
+        <h1 className="text-3xl sm:text-4xl font-bold mb-6 mt-5 flex justify-center text-center bg-clip-text text-transparent bg-white">
           Konfirmasi Orderanmu
         </h1>
 
@@ -123,9 +123,9 @@ const ConfirmOrder = () => {
                 </span>
                 <div className="flex flex-col sm:flex-row justify-between mt-4 gap-4 sm:gap-10">
                   {/* Quantity add/decrease button */}
-                  <div className="flex items-center bg-gray-700/50 rounded-lg p-1 max-w-[160px]">
+                  <div className="flex items-center bg-gray-700/50 rounded-lg p-1 max-w-[200px]">
                     <button
-                      className="w-8 h-8 flex items-center justify-center bg-gray-600 hover:bg-gray-500 rounded-lg transition-colors text-lg font-medium"
+                      className="w-12 h-12 flex items-center justify-center bg-gray-600 hover:bg-gray-500 rounded-lg transition-colors text-lg font-medium"
                       onClick={() =>
                         updateQuantity(
                           order.order_id,
@@ -141,7 +141,7 @@ const ConfirmOrder = () => {
                       {order.quantity}
                     </span>
                     <button
-                      className="w-8 h-8 flex items-center justify-center bg-gray-600 hover:bg-gray-500 rounded-lg transition-colors text-lg font-medium"
+                      className="w-12 h-12 flex items-center justify-center bg-gray-600 hover:bg-gray-500 rounded-lg transition-colors text-lg font-medium"
                       onClick={() =>
                         updateQuantity(
                           order.order_id,
@@ -182,7 +182,7 @@ const ConfirmOrder = () => {
 
         {/* Display payment button */}
         {confirmOrder.length > 0 && (
-          <div className="flex flex-col sm:flex-row items-center sm:items-end mt-8 bg-gray-800/50 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-gray-700/50">
+          <div className="flex flex-col sm:flex-col items-center sm:items-end mt-8 bg-gray-800/50 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-gray-700/50">
             <div className="flex flex-col sm:flex-row items-center sm:justify-between space-y-4 sm:space-y-0 sm:space-x-10 w-full">
               <h1 className="font-bold text-2xl sm:text-3xl text-white/90">
                 Subtotal
@@ -197,7 +197,7 @@ const ConfirmOrder = () => {
             </div>
             <div className="mt-6 sm:mt-0">
               <button
-                className="bg-blue-500 text-white px-6 sm:px-8 py-2 sm:py-3 font-bold rounded-xl text-base sm:text-lg transition-all shadow-lg"
+                className="bg-blue-500 text-white px-6 sm:px-8 py-2 sm:py-3 sm:mt-3 font-bold rounded-xl text-base sm:text-lg transition-all shadow-lg"
                 onClick={() => navigate("/UAS-Project-2024/payment")}
               >
                 Bayar

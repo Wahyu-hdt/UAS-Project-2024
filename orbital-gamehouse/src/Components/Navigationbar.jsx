@@ -17,7 +17,7 @@ const Navbar = () => {
       {/* Navbar container */}
       <div className="max-w-screen-xl mx-auto flex items-center justify-between p-3">
         {/* Logo */}
-        <img src={logo} className="h-10 sm:h-8 w-auto" alt="Logo" />
+        <img src={logo} className="h-10 xl:h-16  w-auto " alt="Logo" />
 
         {/* Hamburger Menu Button */}
         <button
@@ -41,7 +41,7 @@ const Navbar = () => {
         </button>
 
         {/* Navigation Links (Hidden on small screens, shown on large screens) */}
-        <div className="hidden sm:flex items-center text-white space-x-6">
+        <div className="hidden sm:flex items-center text-white space-x-6 mr-52 ">
           <Link
             to="/UAS-Project-2024/"
             className="hover:text-gray-300 hover:underline transition duration-200 ease-in-out"
@@ -53,12 +53,6 @@ const Navbar = () => {
             className="hover:text-gray-300 hover:underline transition duration-200 ease-in-out"
           >
             About Us
-          </Link>
-          <Link
-            to="/UAS-Project-2024/checkout"
-            className="hover:text-gray-300 hover:underline transition duration-200 ease-in-out"
-          >
-            Checkout
           </Link>
         </div>
 

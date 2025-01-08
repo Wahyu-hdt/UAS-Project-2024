@@ -37,7 +37,7 @@ const ImageCarousel = () => {
     fetchImageUrls(); // Call the function to fetch image URLs
   }, []); // Empty dependency array to run only once
 
-  // Automatically change images every 10 seconds
+  // Automatically change images every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
@@ -58,25 +58,31 @@ const ImageCarousel = () => {
   };
 
   return (
-    <div className="relative w-[1200px] h-[600px] mx-auto mt-6">
-      {/* Rendering The current image */}
+    <div className="relative w-full max-w-[1200px] mx-auto mt-6 ">
+      {/* Rendering the current image */}
       {imageUrls.length > 0 ? (
         <img
           src={imageUrls[currentIndex]}
           alt="news"
-          className="absolute w-full h-full rounded-lg "
+          className="w-full h-[250px] sm:h-[400px] md:h-[500px] lg:h-[600px]   rounded-lg"
         />
       ) : (
-        <p>Loading images...</p>
+        <p className="text-center text-white">Loading images...</p>
       )}
 
       {/* Navigation buttons */}
-      <div className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 hover:cursor-pointer ">
-        <BsChevronDoubleLeft onClick={prevSlide} />
+      <div
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 hover:cursor-pointer"
+        onClick={prevSlide}
+      >
+        <BsChevronDoubleLeft />
       </div>
 
-      <div className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 hover:cursor-pointer">
-        <BsChevronDoubleRight onClick={nextSlide} />
+      <div
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 hover:cursor-pointer"
+        onClick={nextSlide}
+      >
+        <BsChevronDoubleRight />
       </div>
     </div>
   );

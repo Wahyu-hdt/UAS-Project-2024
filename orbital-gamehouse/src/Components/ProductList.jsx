@@ -24,6 +24,7 @@ const ProductList = () => {
           error
         );
       } else {
+        // Set state with fetched data
         setProducts(data);
       }
     };
@@ -39,7 +40,7 @@ const ProductList = () => {
   };
 
   return (
-    <div className="flex flex-wrap font-Poppins text-white mt-10 justify-center ">
+    <div className="flex flex-wrap font-Poppins text-white mt-10 justify-center gap-6 px-4">
       {/* Rendering the data from tabel paket-rental */}
       {/* Condition to check if fetching is done/success */}
       {products.length > 0 ? (
@@ -49,16 +50,20 @@ const ProductList = () => {
           .map((product) => (
             <div
               key={product.id}
-              className=" w-1/4 bg-gray-800 flex flex-col items-center p-4 m-2 mt-4 rounded-lg shadow-lg"
+              className="w-full sm:w-[48%] md:w-[30%] lg:w-[23%] bg-gray-800 flex flex-col items-center p-4 m-2 mt-4 rounded-lg shadow-lg"
             >
               <img
                 src={product.images}
                 alt={product.name}
-                className="w-[300px] h-[300px] "
+                className="w-full h-[200px]  rounded-lg"
               />
-              <h2 className="text-lg font-bold mt-2">{product.name}</h2>
-              <p className="text-base">Harga : RP. {product.price}</p>
-              {/* When Button is Clicked , Add Product to Cart */}
+              <h2 className="text-lg font-bold mt-2 text-center">
+                {product.name}
+              </h2>
+              <p className="text-base text-center">
+                Harga: RP. {product.price}
+              </p>
+              {/* When Button is Clicked, Add Product to Cart */}
               <button
                 className={`bg-green-600 px-2 py-1 mt-4 rounded-md hover:bg-green-700 ${
                   addedProducts.has(product.id)

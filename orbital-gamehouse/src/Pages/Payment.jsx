@@ -107,11 +107,14 @@ const Payment = () => {
         )}
       </div>
 
-      <h1 className="text-white text-4xl font-bold mt-7">
+      <h1 className="text-white text-4xl font-bold mt-7 text-center mx-auto">
         Pilih Metode Pembayaran
       </h1>
-      <div className="mt-10 flex flex-row space-x-10">
-        <div className="h-auto w-80 flex flex-col items-center bg-gray-800 p-5 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+
+      {/* Payment Methods Section */}
+      <div className="mt-10 flex flex-col sm:flex-row sm:space-x-10 space-y-10 sm:space-y-0 sm:mt-16">
+        {/* Qris Payment Option */}
+        <div className="h-auto w-full sm:w-80 flex flex-col items-center bg-gray-800 p-5 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-white text-2xl font-bold">Qris</h2>
           <img
             src={qrisLogo}
@@ -126,7 +129,9 @@ const Payment = () => {
             Bayar dengan Qris
           </button>
         </div>
-        <div className="h-auto w-80 flex flex-col items-center bg-gray-800 p-5 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+
+        {/* Cash Payment Option */}
+        <div className="h-auto w-full sm:w-80 flex flex-col items-center bg-gray-800 p-5 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
           <h2 className="text-white text-2xl font-bold">Cash</h2>
           <img
             src={cashlogo}

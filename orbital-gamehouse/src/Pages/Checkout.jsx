@@ -120,6 +120,7 @@ const Checkout = () => {
                     </span>
                     <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
                       <div className="flex items-center bg-gray-700 rounded-lg p-1">
+                        
                         {/* Button to add quantity and decrease quantity*/}
                         <button
                           onClick={() => decreaseQuantity(index)}

@@ -26,7 +26,7 @@ const Home = () => {
       {/* Rendering the image carousel */}
       <div className="flex flex-col items-center justify-center flex-grow px-4 md:px-10">
         <h1 className="font-Poppins text-white text-2xl sm:text-3xl md:text-4xl mt-10 font-bold text-center">
-          NEWS
+          BERITA TERBARU
         </h1>
         <div className="flex w-full max-w-[95%] sm:max-w-[90%] md:max-w-[1250px] h-[250px] sm:h-[350px] md:h-[650px] mt-5 mb-10 justify-center bg-gray-600 rounded-lg">
           <Imagecarousel />
@@ -35,7 +35,7 @@ const Home = () => {
       {/* Rendering the product list */}
       <div className="w-full h-auto bg-gradient-to-b from-gray-950 to-gray-700 px-4 md:px-10">
         <h1 className="text-white font-bold text-2xl sm:text-3xl md:text-5xl mt-10 text-center">
-          Product List
+          List Produk
         </h1>
         <div className="mt-5">
           <ProductList />

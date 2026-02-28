@@ -26,6 +26,8 @@ const Payment = () => {
       } else {
         // Set fetched data to payment state
         setPayment(data);
+
+        // Calculate total amount
         const total = data.reduce((acc, order) => acc + (order.total || 0), 0);
         setTotalAmount(total);
       }

@@ -55,7 +55,7 @@ const ProductList = () => {
               <img
                 src={product.images}
                 alt={product.name}
-                className="w-full h-[200px]  rounded-lg"
+                className="w-3/4 h-[200px]  rounded-lg"
               />
               <h2 className="text-lg font-bold mt-2 text-center">
                 {product.name}
